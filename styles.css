@@ -1,0 +1,99 @@
+:root{--paper:#f2eee3;--paper2:#f8f5ec;--ink:#2d352f;--muted:#777b6e;--blue:#245f9b;--yellow:#efc84a;--line:#d5d2c4;--rust:#b76648;--code:#19263d;--cream:#fbf9f2}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font-family:Nunito,Arial,sans-serif;font-size:16px}a{color:inherit;text-decoration:none}.wrap{width:min(1120px,calc(100% - 48px));margin:auto}.topbar{height:72px;border-bottom:1px solid var(--line);display:flex;align-items:center;padding:0 max(24px,calc((100% - 1120px)/2));gap:40px}.brand{font:700 19px Gabarito,sans-serif;white-space:nowrap}.brand span{color:var(--rust);font-family:Fira Code,monospace}.brand b{font-weight:500}.topbar nav{display:flex;gap:28px;margin:auto;font-size:14px;color:#62695f}.topbar>small{font-size:10px;letter-spacing:.12em;color:var(--blue)}.hero{min-height:390px;display:grid;grid-template-columns:1fr .85fr;align-items:center;gap:60px;padding:55px 0 42px}.eyebrow{font:600 10px "Fira Code",monospace;letter-spacing:.12em;color:var(--blue)}.eyebrow b{color:var(--rust);margin-left:12px}.hero h1{font:700 clamp(42px,5vw,65px)/.99 Gabarito,sans-serif;letter-spacing:-.04em;margin:22px 0}.hero h1 em{font-style:normal;color:var(--blue)}.hero-copy>p:not(.eyebrow){max-width:510px;line-height:1.7;color:#62695f}.hero code,.tip code,.lesson code:not(#code),.practice code{background:#e5e2d6;padding:1px 4px;border-radius:3px;font:12px "Fira Code",monospace}.button{display:inline-block;background:var(--ink);color:white;padding:13px 18px;border-radius:3px;font-weight:700;margin-top:16px}.caption{font-size:11px;color:var(--muted);margin-left:18px}.hero-art{height:290px;position:relative;display:grid;place-items:center;background-image:linear-gradient(#788d7c16 1px,transparent 1px),linear-gradient(90deg,#788d7c16 1px,transparent 1px);background-size:22px 22px;border:1px solid #d6d8cb}.code-card{animation:float 6s ease-in-out infinite;z-index:2;background:var(--cream);box-shadow:0 15px 35px #3c49341a;width:260px;padding:18px 20px;border:1px solid #d9d6c8;font:12px "Fira Code",monospace}.code-card small,.code-card>span{font-size:10px;color:var(--muted)}.code-card pre{line-height:1.8;color:var(--ink)}.code-card pre b{color:#98713e}.code-card pre i{color:var(--blue);font-style:normal}.code-card hr{border:0;border-top:1px solid var(--line)}.code-card>span b{float:right;color:var(--rust)}.sticker{position:absolute;top:23px;left:26px;color:var(--blue);font:9px "Fira Code",monospace;letter-spacing:.1em}.sticker.bottom{top:auto;left:auto;bottom:20px;right:20px}.seal{animation:stamp 9s ease-in-out infinite;position:absolute;right:43px;top:50px;width:62px;height:62px;border:1px solid var(--rust);color:var(--rust);border-radius:50%;display:grid;place-content:center;text-align:center;font:700 15px Gabarito;transform:rotate(9deg)}.seal small{font:8px "Fira Code"}.progress{border-block:1px solid var(--line);padding:18px 0;display:grid;grid-template-columns:170px 1fr 365px;gap:20px;align-items:center;font:10px "Fira Code";color:var(--blue)}.progress span{float:right;color:var(--muted)}.track{height:3px;background:#dddbd0}.track span{display:block;float:none;height:100%;width:0;background:var(--rust);transition:width .4s}.progress>small{font:9px "Fira Code";white-space:nowrap;color:var(--muted)}.workshop{padding:62px 0 78px}.section-heading{display:flex;justify-content:space-between;align-items:end;margin-bottom:26px}.section-heading h2,.practice h2{font:700 36px Gabarito;margin:6px 0 0;letter-spacing:-.025em}.section-heading>p{font-size:13px;color:var(--muted);line-height:1.7;margin:0}.tabs{display:grid;grid-template-columns:repeat(4,1fr);margin:24px 0 0;border-bottom:1px solid var(--line)}.tabs button{border:0;background:transparent;text-align:left;padding:15px 20px;display:grid;grid-template-columns:35px 1fr;gap:1px 10px;color:var(--muted);cursor:pointer;border-bottom:2px solid transparent;font:11px "Fira Code"}.tabs button b{font:700 16px Nunito;color:var(--ink)}.tabs button small{grid-column:2;font:12px Nunito}.tabs button.active{border-color:var(--rust);color:var(--rust);background:#e6e3d8}.layout{display:grid;grid-template-columns:245px 1fr;border:1px solid var(--line);border-top:0;min-height:600px;background:#f7f4eb}.layout aside{padding:22px 17px;border-right:1px solid var(--line)}.rail-title{font:9px "Fira Code";letter-spacing:.08em;color:var(--blue);display:flex;justify-content:space-between}#search{margin:16px 0 10px;width:100%;background:transparent;border:1px solid var(--line);padding:10px;font:12px Nunito;color:var(--ink)}#example-list{display:grid;gap:5px}.example-item{border:0;border-left:2px solid transparent;background:none;text-align:left;padding:11px 10px;cursor:pointer;color:var(--muted);font:12px Nunito}.example-item b{display:block;color:var(--ink);font-size:13px}.example-item small{font:9px "Fira Code"}.example-item.active{background:#e9e6db;border-left-color:var(--rust)}.example-item.done:after{content:"✓";float:right;color:var(--blue)}.tip{margin-top:24px;padding-top:14px;border-top:1px solid var(--line);font-size:11px;color:var(--muted);line-height:1.6}.tip b{color:var(--blue)}.lesson{padding:28px 34px}.lesson-head{display:flex;justify-content:space-between;align-items:center}.lesson-head small{font:9px "Fira Code";letter-spacing:.08em;color:var(--rust)}.lesson-head h3{font:700 27px Gabarito;margin:8px 0}.level{font:9px "Fira Code";color:var(--blue);border:1px solid #c6d0c5;padding:6px 8px}.lesson>p{font-size:13px;color:#676d63;line-height:1.65}.concept{display:flex;gap:13px;align-items:center;border-block:1px solid var(--line);padding:12px 0;margin:18px 0}.concept>span{font:18px "Fira Code";color:var(--rust)}.concept p{margin:0;font-size:13px}.concept small,.columns small{font:9px "Fira Code";letter-spacing:.08em;color:var(--blue)}.code-head{background:#35433d;color:#e8e9dc;padding:10px 14px;display:flex;justify-content:space-between;align-items:center;font:10px "Fira Code"}.code-head>span:first-child{color:#d0a572}.code-head b{color:white;font-weight:400}.code-head small{margin-left:12px;color:#a9b2a9;font-size:9px}.code-head button{background:none;border:0;color:#e8e9dc;font:10px Nunito;cursor:pointer}.codebox{background:var(--code);color:#e8e5d8;overflow:auto;max-height:420px}.codebox pre{margin:0;padding:17px 20px;font:11px/1.75 "Fira Code",monospace;tab-size:4}.codebox code{white-space:pre}.columns{display:grid;grid-template-columns:1.3fr 1fr;gap:25px;padding:17px 0}.columns p{font-size:12px;color:#60675f;line-height:1.65;margin:7px 0}.columns button{display:block;border:0;background:none;padding:8px 0;font:12px Nunito;color:var(--rust);cursor:pointer}.columns pre{font:11px/1.6 "Fira Code";color:var(--blue);background:#ece9dd;padding:10px;margin:0;white-space:pre-wrap}.takeaway{background:#e8e6da;padding:12px 14px;color:var(--blue);font-size:12px;line-height:1.55}.takeaway span{color:var(--rust);margin-right:9px}.lesson footer{display:flex;justify-content:space-between;align-items:center;padding-top:18px;font:9px "Fira Code";color:var(--muted)}.lesson footer button{border:1px solid var(--line);background:transparent;padding:7px 11px;color:var(--ink);cursor:pointer}.lesson footer button:hover{background:var(--blue);color:white}.blueprint{padding:65px 0;background:#e7e9df;border-block:1px solid #d4d9cf}.cheats{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}.cheats details{background:#f5f3eb;border:1px solid #d4d8cf;padding:14px 16px}.cheats summary{cursor:pointer;list-style:none;display:flex;justify-content:space-between;font-size:13px}.cheats summary::-webkit-details-marker{display:none}.cheats summary span{font-size:10px;color:var(--muted)}.cheats pre{background:#303e38;color:#f2eee3;padding:13px;font:10px/1.7 "Fira Code";overflow:auto}.cheats p,.exercises p,.exercises li,.exercises details p{font-size:12px;line-height:1.65;color:#61685f}.practice{padding:70px 0}.exercises{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:22px}.exercises article{padding:23px;background:#f8f5ec;border:1px solid var(--line)}.exercises article:nth-child(2){background:#e7e9df}.exercises article>small,.books a>small{font:9px "Fira Code";color:var(--rust);letter-spacing:.08em}.exercises h3{font:700 22px Gabarito;margin:12px 0}.exercises ul{padding-left:19px}.exercises details{border-top:1px solid var(--line);padding-top:10px}.exercises summary{font-size:12px;color:var(--blue);cursor:pointer}.compile{margin-top:22px;font-size:12px;color:var(--blue)}.sources{background:#e7e3d8;padding:65px 0}.books{display:grid;grid-template-columns:repeat(5,1fr);gap:10px}.books a{padding:15px;background:#f6f3eb;border:1px solid #d4d0c3;display:flex;flex-direction:column;gap:11px;transition:transform .2s}.books a:hover{transform:translateY(-3px)}.books b{font:700 17px/1.1 Gabarito}.books a>span{font-size:11px;color:#696f65;line-height:1.5}.books i{font:9px "Fira Code";color:var(--blue);font-style:normal;margin-top:auto}.source-note{font-size:10px;color:var(--muted);margin-top:18px}.bottom{display:flex;justify-content:space-between;align-items:center;padding:23px 0;font-size:11px;color:var(--muted)}.bottom .brand{color:var(--ink)}.bottom .brand:first-letter{color:var(--rust)}@media(max-width:800px){.topbar{padding:0 20px;gap:12px}.topbar nav{gap:12px}.topbar>small{display:none}.hero{grid-template-columns:1fr;gap:25px}.hero-art{height:240px}.progress{grid-template-columns:1fr 1fr}.progress>small{grid-column:1/-1}.layout{grid-template-columns:190px 1fr}.lesson{padding:20px}.books{grid-template-columns:repeat(2,1fr)}.cheats{grid-template-columns:repeat(2,1fr)}}@media(max-width:560px){.wrap{width:calc(100% - 30px)}.topbar{height:58px}.topbar nav{display:none}.topbar>small{display:block;margin-left:auto;font-size:8px}.hero{padding:38px 0}.hero h1{font-size:46px}.caption{display:block;margin:13px 0}.progress{grid-template-columns:1fr;gap:10px}.section-heading{display:block}.section-heading>p{margin-top:10px}.tabs button{padding:12px 8px;grid-template-columns:1fr;gap:6px}.tabs button small{grid-column:1;font-size:10px}.layout{grid-template-columns:1fr}.layout aside{border:0;border-bottom:1px solid var(--line)}#example-list{grid-template-columns:1fr 1fr}.tip{display:none}.lesson{padding:18px}.lesson-head h3{font-size:23px}.columns{grid-template-columns:1fr}.cheats,.exercises,.books{grid-template-columns:1fr}.section-heading h2,.practice h2{font-size:31px}.bottom{flex-wrap:wrap;gap:12px}.codebox pre{font-size:10px}}@media(prefers-reduced-motion:reduce){*,*:before,*:after{scroll-behavior:auto!important;transition:none!important;animation:none!important}}
+
+@keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-7px)}}@keyframes stamp{0%,100%{transform:rotate(9deg)}50%{transform:rotate(13deg)}}
+
+
+/* Contraste, diagramas y movimiento */
+:root{--ink:#202a39;--muted:#606b7a;--blue:#205b99;--yellow:#f0c84b;--code:#17243a;--paper:#f3efe4;--paper2:#faf7ef;--line:#c9c9bd}
+body{background:var(--paper);color:var(--ink)}
+.topbar nav a,.topbar nav a:hover{transition:color .2s,transform .2s}
+.topbar nav a:hover{color:var(--blue);transform:translateY(-2px)}
+.brand span{color:var(--rust)}
+.eyebrow{color:var(--blue)}
+.hero h1 em{color:var(--blue)}
+.hero-art{background-image:linear-gradient(#245f9b20 1px,transparent 1px),linear-gradient(90deg,#245f9b20 1px,transparent 1px);background-color:#f6f4e9}
+.code-card{animation:float 5s ease-in-out infinite;border-top:3px solid var(--yellow)}
+.seal{background:var(--yellow);color:#243044;border-color:var(--rust);font-weight:800}
+.button{background:var(--blue);box-shadow:0 5px 0 #163d66;transition:transform .2s,box-shadow .2s,background .2s}
+.button:hover{background:#174978;transform:translateY(-3px);box-shadow:0 8px 0 #163d66}
+.track span{background:var(--yellow);transition:width .65s cubic-bezier(.2,.8,.2,1)}
+.tabs button{transition:background .25s,border-color .25s,transform .25s}
+.tabs button:hover{background:#e2e8ef;transform:translateY(-2px)}
+.tabs button.active{border-color:var(--rust);background:#e3e8ec}
+.layout{box-shadow:0 18px 45px #23354a12}
+.lesson{background:#faf8f1}
+.code-head{background:#24334d;color:#fff;border-top:3px solid var(--yellow)}
+.code-head>span:first-child{color:#f3cf62}
+.code-head b{color:#fff}
+.code-head small{color:#d3dce8}
+.code-head button{color:#fff}
+.codebox{background:#17243a;color:#fff}
+.codebox pre{color:#f8f7ef}
+.codebox code{color:#f8f7ef;background:transparent;font:inherit}
+.codebox pre::selection,.codebox code::selection{background:#3975ac;color:#fff}
+.concept{border-color:#c4cbd1}
+.concept>span,.takeaway span{color:var(--rust)}
+.takeaway{background:#fff0c8;color:#3c4651;border-left:3px solid var(--yellow)}
+.output-toggle,.columns button{color:var(--blue)}
+.difficulty,.level{color:var(--blue)}
+.example-item{transition:background .2s,transform .2s,border-color .2s}
+.example-item:hover{background:#e8ebee;transform:translateX(3px)}
+.example-item.active{border-color:var(--rust);background:#e3e8ec}
+.lesson footer button{transition:background .2s,transform .2s}
+.lesson footer button:hover{background:var(--blue);transform:translateY(-2px)}
+.blueprint{background:#e6edf2;border-color:#cbd6df}
+.cheats details{transition:transform .25s,box-shadow .25s,border-color .25s}
+.cheats details:hover{transform:translateY(-3px);box-shadow:0 9px 20px #28425b13;border-color:#8ca9c1}
+.cheats summary b{color:var(--blue)}
+.cheats summary i,.cheats summary>span{color:#576474}
+.cheats pre{background:#24334d;color:#fff;border-left:3px solid var(--yellow)}
+.exercises article{transition:transform .25s,box-shadow .25s}
+.exercises article:hover{transform:translateY(-4px);box-shadow:0 12px 26px #2a405218}
+.exercises article:nth-child(2){background:#e6edf2}
+.exercises article>small,.books a>small{color:#a94f38}
+.books a{transition:transform .25s,box-shadow .25s,border-color .25s}
+.books a:hover{transform:translateY(-5px);box-shadow:0 12px 24px #293d511a;border-color:var(--blue)}
+.pointer-rule{background:#fff0c8;padding:11px 13px;border-left:3px solid var(--yellow)}
+.theory{padding:48px 0 58px}
+.theory-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
+.theory-card{background:#faf8f1;border:1px solid var(--line);padding:17px;min-height:240px;transition:transform .3s,box-shadow .3s}
+.theory-card:hover{transform:translateY(-5px);box-shadow:0 14px 30px #263d5518}
+.theory-card>small{font:9px "Fira Code";color:var(--blue);letter-spacing:.08em}
+.theory-card h3{font:700 23px Gabarito;margin:9px 0 5px}
+.theory-card p{font-size:12px;line-height:1.55;color:#556071}
+.mini-diagram{display:grid;gap:6px;padding:12px;background:#e8edf0;border:1px solid #c4d1da;font:10px "Fira Code";margin-top:12px}
+.mini-diagram>b{color:var(--blue);border-bottom:1px solid #b7c4cd;padding-bottom:5px}
+.class-diagram .lock{color:#a94f38}
+.tree-diagram{display:grid;justify-items:center;gap:5px;margin-top:14px;font:11px "Fira Code";color:#39495b}
+.tree-diagram>b{padding:7px 18px;background:var(--yellow);border:1px solid #d1ae3c;border-radius:4px}
+.tree-diagram>i{font-size:20px;color:var(--blue);font-style:normal}
+.tree-diagram>span{background:#e8edf0;padding:7px 11px;border:1px solid #c4d1da;border-radius:4px}
+.pointer-theory{border-top:3px solid var(--yellow)}
+.pointer-visual{display:grid;grid-template-columns:1fr 32px 1fr;align-items:center;gap:2px;margin-top:12px}
+.memory-cell{display:grid;gap:4px;padding:9px;background:#e7edf3;border:1px solid #c2d1dd;text-align:center;font:9px "Fira Code";min-width:0}
+.memory-cell small{font-size:8px;color:var(--blue)}
+.memory-cell b{font-size:15px;color:#23364c}
+.memory-cell code{font:8px "Fira Code";color:#5b6672;overflow-wrap:anywhere}
+.pointer-arrow{font:22px "Fira Code";color:#ba513c;text-align:center;transition:transform .5s cubic-bezier(.2,.8,.2,1)}
+.pointer-visual.revealed .pointer-arrow{animation:pointPulse .8s ease-in-out 2}
+.pointer-visual.revealed .memory-cell:first-child{background:#fff0c8;border-color:#e2b930}
+.demo-button{margin-top:8px;background:var(--blue);border:0;border-radius:3px;color:white;padding:8px 10px;font:11px Nunito;cursor:pointer;transition:background .2s,transform .2s}
+.demo-button:hover{background:#174978;transform:translateY(-2px)}
+.demo-button span{color:var(--yellow);padding-left:6px}
+.pointer-primer{margin-top:16px;display:grid;grid-template-columns:1fr 1.1fr;gap:24px;background:#dfe8ef;border:1px solid #c3ced7;padding:20px 23px}
+.pointer-primer h3{font:700 23px Gabarito;margin:7px 0}
+.pointer-primer p,.pointer-primer li{font-size:12px;line-height:1.7;color:#465365}
+.pointer-primer ul{padding-left:18px;margin:7px 0}
+.pointer-uses>b{color:var(--blue)}
+.pointer-rule{font-size:11px!important;color:#34404e!important}
+@keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-7px)}}
+@keyframes pointPulse{0%,100%{transform:translateX(0)}50%{transform:translateX(-5px)}}
+@keyframes reveal{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:translateY(0)}}
+.lesson{animation:reveal .38s ease-out}
+@media(max-width:800px){.theory-grid{grid-template-columns:repeat(2,1fr)}.tabs{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:560px){.theory-grid{grid-template-columns:1fr 1fr}.theory-card{padding:12px;min-height:240px}.pointer-primer{grid-template-columns:1fr;gap:10px}.tabs{grid-template-columns:repeat(2,1fr)}}
+@media(prefers-reduced-motion:reduce){.code-card,.pointer-visual.revealed .pointer-arrow{animation:none!important}.theory-card,.books a,.exercises article,.tabs button,.lesson{transition:none!important}}
+
+.lesson.replay{animation:reveal .4s ease-out}
+:focus-visible{outline:3px solid var(--yellow);outline-offset:3px}
+
